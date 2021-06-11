@@ -109,7 +109,7 @@ typedef _CloneNode_Native = Int32 Function(
     /* Boolean */ Uint8 deep,
     Pointer<Pointer> result);
 typedef _CloneNode_Dart = int Function(
-    Pointer obj, bool deep, Pointer<Pointer> result);
+    Pointer obj, int deep, Pointer<Pointer> result);
 
 typedef _get_NamespaceUri_Native = Int32 Function(
     Pointer obj, Pointer<COMObject> value);
@@ -150,7 +150,7 @@ class IXmlNode extends IXmlNodeSelector {
 
       if (FAILED(hr)) throw WindowsException(hr);
 
-      final retValue = retValuePtr.value;
+      final retValue = retValuePtr.ref;
       return retValue;
     } finally {
       free(retValuePtr);
@@ -396,7 +396,7 @@ class IXmlNode extends IXmlNodeSelector {
           .value
           .asFunction<_AppendChild_Dart>()(ptr.ref.lpVtbl, newChild, result);
 
-  int CloneNode(bool deep, Pointer<Pointer> result) => ptr.ref.lpVtbl.value
+  int CloneNode(int deep, Pointer<Pointer> result) => ptr.ref.lpVtbl.value
       .elementAt(36)
       .cast<Pointer<NativeFunction<_CloneNode_Native>>>()
       .value
@@ -414,7 +414,7 @@ class IXmlNode extends IXmlNodeSelector {
 
       if (FAILED(hr)) throw WindowsException(hr);
 
-      final retValue = retValuePtr.value;
+      final retValue = retValuePtr.ref;
       return retValue;
     } finally {
       free(retValuePtr);
@@ -433,7 +433,7 @@ class IXmlNode extends IXmlNodeSelector {
 
       if (FAILED(hr)) throw WindowsException(hr);
 
-      final retValue = retValuePtr.value;
+      final retValue = retValuePtr.ref;
       return retValue;
     } finally {
       free(retValuePtr);
@@ -452,7 +452,7 @@ class IXmlNode extends IXmlNodeSelector {
 
       if (FAILED(hr)) throw WindowsException(hr);
 
-      final retValue = retValuePtr.value;
+      final retValue = retValuePtr.ref;
       return retValue;
     } finally {
       free(retValuePtr);
