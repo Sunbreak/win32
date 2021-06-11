@@ -18,6 +18,7 @@ import 'projection/typeprinter.dart';
 
 final typesToGenerate = [
   'Windows.Data.Xml.Dom.IXmlNodeList',
+  'Windows.Data.Xml.Dom.IXmlNodeSelector',
   'Windows.Foundation.IPropertyValue',
   'Windows.Foundation.IAsyncAction',
   'Windows.Foundation.IAsyncInfo',

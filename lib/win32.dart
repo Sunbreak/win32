@@ -225,4 +225,5 @@ export 'src/com/IWbemContext.dart';
 export 'src/com/IWbemLocator.dart';
 export 'src/com/IWbemServices.dart';
 export 'src/com/IXmlNodeList.dart';
+export 'src/com/IXmlNodeSelector.dart';
 export 'src/com/UserDataPaths.dart';
