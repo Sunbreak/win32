@@ -18,6 +18,7 @@ import '../projection/winrt_interface.dart';
 // import '../projection/typeprinter.dart';
 
 final typesToGenerate = [
+  'Windows.Foundation.Collections.IIterable`1',
   'Windows.Foundation.IPropertyValue',
   'Windows.Foundation.IAsyncAction',
   'Windows.Foundation.IAsyncInfo',
