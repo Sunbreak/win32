@@ -109,7 +109,7 @@ typedef _ImportNode_Native = Int32 Function(
     /* Boolean */ Uint8 deep,
     Pointer<Pointer> result);
 typedef _ImportNode_Dart = int Function(
-    Pointer obj, Pointer node, bool deep, Pointer<Pointer> result);
+    Pointer obj, Pointer node, int deep, Pointer<Pointer> result);
 
 /// {@category Interface}
 /// {@category winrt}
@@ -285,7 +285,7 @@ class IXmlDocument extends IXmlNode {
       .value
       .asFunction<_GetElementById_Dart>()(ptr.ref.lpVtbl, elementId, result);
 
-  int ImportNode(Pointer node, bool deep, Pointer<Pointer> result) =>
+  int ImportNode(Pointer node, int deep, Pointer<Pointer> result) =>
       ptr.ref.lpVtbl.value
           .elementAt(77)
           .cast<Pointer<NativeFunction<_ImportNode_Native>>>()
