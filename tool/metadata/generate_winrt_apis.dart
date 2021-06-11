@@ -17,6 +17,7 @@ import 'projection/classprojector.dart';
 import 'projection/typeprinter.dart';
 
 final typesToGenerate = [
+  'Windows.Data.Xml.Dom.IXmlDocument',
   'Windows.Data.Xml.Dom.IXmlNode',
   'Windows.Data.Xml.Dom.IXmlNodeList',
   'Windows.Data.Xml.Dom.IXmlNodeSelector',
